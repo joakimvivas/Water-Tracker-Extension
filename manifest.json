@@ -1,12 +1,26 @@
 {
     "manifest_version": 3,
     "name": "Water Tracker",
-    "version": "1.1",
-    "description": "Mantén un registro de tu consumo de agua y recibe recordatorios.",
+    "version": "1.2",
+    "description": "Track your water consumption with reminders, daily goals, and multi-language support.",
     "permissions": [
         "storage",
-        "notifications",
-        "alarms"
+        "alarms",
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
     ],
     "action": {
         "default_popup": "popup.html",
@@ -23,5 +37,16 @@
         "16": "icons/glass.png",
         "48": "icons/glass.png",
         "128": "icons/glass.png"
-    }
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "icons/glass.png",
+                "icons/drinking.png"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
 }
