@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Water Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>¡Hola! 💧</h1>
+      <div class="subtitle">Es hora de hidratarse</div>
+    </header>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value" id="count-display">0</span>
+        <span class="stat-label">Bebido</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="goal-display">8</span>
+        <span class="stat-label">Meta</span>
+      </div>
+    </div>
+
+    <div class="action-section">
+      <div class="selector-title">¿Qué has bebido?</div>
+      <div class="quantity-selector">
+        <div class="quantity-btn selected" data-amount="1">
+          <img src="icons/glass.png" alt="1 vaso">
+          <span>1 Vaso</span>
+        </div>
+        <div class="quantity-btn" data-amount="2">
+          <img src="icons/glass.png" alt="2 vasos" style="height: 32px;">
+          <span>2 Vasos</span>
+        </div>
+        <div class="quantity-btn" data-amount="3">
+          <img src="icons/glass.png" alt="3 vasos" style="height: 36px;">
+          <span>3 Vasos</span>
+        </div>
+      </div>
+
+      <button id="add-btn" class="primary-btn">Registrar Agua</button>
+    </div>
+
+    <footer>
+      <span>Próximo aviso en: <strong id="next-alarm">--:--</strong></span>
+    </footer>
+  </div>
+
+  <div id="overlay" class="overlay">
+    <img src="icons/drinking.png" alt="Éxito" style="width: 80px; margin-bottom: 10px;">
+    <h2 style="margin: 0; color: #1e293b;">¡Genial!</h2>
+    <p style="color: #64748b; margin-top: 8px;">¡Sigue así hidratándote! 💪</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
