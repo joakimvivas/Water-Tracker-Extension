@@ -2,6 +2,18 @@
 
 A Chrome/Brave extension designed to help you stay hydrated through timely reminders and a simple water intake logging system.
 
+## Screenshots
+
+### Main Dashboard
+![Main Dashboard](assets/dashboard.png)
+
+*The main view allows you to quickly log your water intake. You can choose between one, two, or three glasses and see your daily progress at a glance. It also features a real-time countdown to your next reminder.*
+
+### Settings
+![Settings](assets/settings.png)
+
+*In the settings panel, you can customize your experience by switching languages (English/Spanish), adjusting the reminder frequency, and setting your daily hydration goal. There is also a "Test Notification" button to verify the visual alerts.*
+
 ## 🚀 Features
 - **In-Page Visual Notifications**: A beautiful "Glassmorphism" toast appears directly on your current website, so you never miss a reminder.
 - **Automatic Reminders**: Configurable notifications from 1 to 1440 minutes.
